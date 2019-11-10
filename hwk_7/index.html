@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="train">Anytime is Train Time</h1>
+        <h2>Choo Choo. Chee Chee.</h2>
+    </div>
+
+    <div class="schedule">
+        <table class="trainschedule" width=100%>
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody class="train-list">
+                <tr>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="addtrain">
+        <h1>Add Train</h1>
+        <form class="add-train">
+            <label>Train Name</label>
+            <input type="type" name="train-name" class="train-name" placeholder="enter name" required>
+            <br>
+            <label>Destination</label>
+            <input type="type" name="destination" class="destination-name" placeholder="enter destination" required>
+            <br>
+            <label>First Train Time (HH:mm Military Time)</label>
+            <input type="type" name="first-train-time" class="train-time" placeholder="enter time" required>
+            <br>
+            <label>Frequency (min)</label>
+            <input type="type" name="frequency-min" class="frequency-min" placeholder="enter frequency" required>
+            <br>
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <!-- user js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
