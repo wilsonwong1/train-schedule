@@ -1,0 +1,31 @@
+.header{
+    height:20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.trainschedule {
+    text-align: center;
+}
+.add-train label {
+    width: 300px;
+    display: inline-block;
+}
+
+.addtrain{
+    border: 15px black;
+    width: 80%;
+    
+}
+.train-name{
+    width: 60%;
+}
+.destination-name{
+    width: 60%;
+}
+.train-time{
+    width: 60%;
+}
+.frequency-min{
+    width: 60%;
+}
